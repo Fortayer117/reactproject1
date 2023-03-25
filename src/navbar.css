@@ -1,0 +1,43 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+    background-color: rgb(202, 202, 202);
+    position: relative;
+  }
+  
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 3px;
+  }
+  
+  .hamburger span {
+    width: 25px;
+    height: 2px;
+    background: #000;
+  }
+  
+  @media all and (max-width: 800px) {
+    .hamburger {
+      display: flex;
+    }
+    .links {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: #d5d5d5;
+      height: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      overflow: hidden;
+      transition: all 0.2s linear;
+    }
+  
+    .links.active {
+      height: 30vh;
+    }
+  }

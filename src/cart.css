@@ -1,0 +1,30 @@
+.cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: brown;
+    border: 0;
+    border-radius: 5%;
+  }
+  .img img {
+    width: 100px;
+    height: 150px;
+  }
+  .img {
+    display: flex;
+    height: 200px;
+  }
+  .h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+  }
+  .btn {
+    background-color: blue;
+  }
+  .cart.active {
+    display: none;
+  }
